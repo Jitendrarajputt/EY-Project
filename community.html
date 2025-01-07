@@ -1,330 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Support</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4bbfc;
+            color: #333;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
+        /* Header */
+        .light-header {
+            background: #9667e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
 
-header {
-    background: #9667e0;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
+        .light-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
+        .light-header h1 {
+            font-size: 1.8em;
+            color: #ffffff;
+        }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
+        .light-header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-header nav ul li {
-    margin: 0 15px;
-}
+        .light-header nav a:hover,
+        .light-header nav .active {
+            color: #d4bbfc;
+            font-weight: bold;
+        }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
+        /* Footer */
+        .light-footer {
+            background: #9667e0;
+            border-top: 1px solid #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            color: #fffcfc;
+            font-size: 14px;
+        }
 
-#hero {
-    background: #e2cdf6;
-    text-align: center;
-    padding: 50px 20px;
-}
+        .light-footer a {
+            color: #281645;
+            text-decoration: none;
+        }
 
-#hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        .light-footer a:hover {
+            text-decoration: underline;
+        }
 
-#hero p {
-    font-size: 18px;
-}
+        .community-section {
+            background: #ebd9fc;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
+        .community-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-section#about,
-section#contact {
-    background: #ecdff9;
-}
+        .community-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-section#join {
-    background: #e2cdf6;
-}
+        .community-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            width: 300px;
+            text-align: left;
+        }
 
-.container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .community-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 28px;
-}
+        .community-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
 
-form input, form button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 16px;
-}
+        .community-card a,
+        .community-card button {
+            background: #9a5efb;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
 
-form input {
-    border: 1px solid #ddd;
-}
+        .community-card a:hover,
+        .community-card button:hover {
+            background: #5626a3;
+        }
 
-form button {
-    background-color: #9667e0;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
+        #language-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
 
-form button:hover {
-    background-color: #57378a;
-}
+        #language-switcher img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
 
-footer {
-    background: #9667e0;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 0;
-}
-/* #chatbot-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: url('ai-icon.png') no-repeat center;
-    background-size: cover;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-#chatbot {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    width: 300px;
-    max-height: 400px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    display: none;
-    flex-direction: column;
-}
-
-#chatbot-header {
-    background: #007bff;
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#chatbot-messages {
-    height: 200px;
-    overflow-y: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#chatbot-input {
-    display: flex;
-    border-top: 1px solid #ddd;
-}
-
-#chatbot-input input {
-    flex: 1;
-    border: none;
-    padding: 10px;
-    outline: none;
-}
-
-#chatbot-input button {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-} */
-
-#language-switcher {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#language-switcher img {
-    width: 40px;
-    height: 30px;
-}
-
-#language-switcher select {
-    border: none;
-    font-size: 14px;
-    outline: none;
-    padding: 5px;
-}
-
+        #language-switcher select {
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding: 5px;
+        }
     </style>
 </head>
-<body>
 
-    <header>
-        <div class="logo">Community Support</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#join">Join</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body>
+    <!-- Header -->
+    <header class="light-header">
+        <div class="container">
+            <h1>Community Support</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="tools.html">Tools</a>
+                <a href="learning.html">Learning</a>
+                <a href="community.html" class="active">Community</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="hero">
-        <div class="hero-text">
-            <h1>Join a Supportive Network</h1>
-            <p>Join a supportive network of mentors, advisors, and successful female entrepreneurs to guide you on your journey.</p>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Our community is designed to bring together passionate female entrepreneurs, experienced mentors, and like-minded individuals to foster growth, share knowledge, and support each other.</p>
-        </div>
-    </section>
-
-    <section id="join">
-        <div class="container">
+    <!-- Main Section -->
+    <main>
+        <section class="community-section light-theme">
             <h2>Join Our Community</h2>
+            <p>Join a supportive network of mentors, advisors, and successful female entrepreneurs to guide you on your journey.</p>
             <form id="joinForm">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" required placeholder="Enter your name">
-
-                <label for="email">Email Address</label>
-                <input type="email" id="email" required placeholder="Enter your email">
-
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
                 <button type="submit">Join Now</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="contact">
+    <!-- Footer -->
+    <footer class="light-footer">
         <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out to us.</p>
-            <p>Email: support@communitysupport.com</p>
+            <p>&copy; 2025 Financial Empowerment Platform. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a></p>
         </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Community Support | All Rights Reserved</p>
     </footer>
-    <div id="chatbot-icon"></div>
-
-    <!-- <div id="chatbot">
-        <div id="chatbot-header">AI Assistant</div>
-        <div id="chatbot-messages"></div>
-        <div id="chatbot-input">
-            <input type="text" id="chatbot-query" placeholder="Ask me anything...">
-            <button id="chatbot-send">Send</button>
-        </div>
-    </div> -->
 
     <!-- Language Switcher -->
     <div id="language-switcher">
         <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
-        <select id="language-select">
-            <option value="en">English</option>
-            <option value="hi">हिंदी</option>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="community.html">English</option>
+            <option value="community_hi.html">हिंदी</option>
         </select>
     </div>
 
     <script>
+        // Function to change language and store preference
+        function changeLanguage(language) {
+            location.href = language;
+        }
+
+        // Check stored language preference on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
+
+        // Set the language switcher to the correct value
+        document.getElementById('language-select').value = location.pathname.split('/').pop();
+
+        // Form submission
         document.getElementById("joinForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
 
-    if (name && email) {
-        alert(`Thank you, ${name}! You've successfully joined the community.`);
-    } else {
-        alert("Please fill out all fields.");
-    }
-});
-const links = document.querySelectorAll("a[href^='#']");
-     links.forEach(link => {
-         link.addEventListener("click", (e) => {
-             e.preventDefault();
-             const targetId = link.getAttribute("href").substring(1);
-             const targetSection = document.getElementById(targetId);
+            if (name && email) {
+                alert(`Thank you, ${name}! You've successfully joined the community.`);
+            } else {
+                alert("Please fill out all fields.");
+            }
+        });
 
-             if (targetSection) {
-                 targetSection.scrollIntoView({ behavior: "smooth" });
-             }
-         });
-     });
-     // Chatbot functionality
- const chatbotIcon = document.getElementById('chatbot-icon');
- const chatbot = document.getElementById('chatbot');
- chatbotIcon.addEventListener('click', () => {
-     chatbot.style.display = chatbot.style.display === 'flex' ? 'none' : 'flex';
- });
- // AI Chatbot
- const chatbotMessages = document.getElementById("chatbot-messages");
- const chatbotQuery = document.getElementById("chatbot-query");
- const chatbotSend = document.getElementById("chatbot-send");
+        // Smooth scrolling for internal links
+        const links = document.querySelectorAll("a[href^='#']");
+        links.forEach(link => {
+            link.addEventListener("click", (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute("href").substring(1);
+                const targetSection = document.getElementById(targetId);
 
- chatbotSend.addEventListener("click", () => {
-     const userMessage = chatbotQuery.value;
-     if (!userMessage.trim()) return;
-     chatbotMessages.innerHTML += `<div><strong>You:</strong> ${userMessage}</div>`;
-     chatbotQuery.value = "";
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: "smooth" });
+                }
+            });
+        });
 
-     // Mock AI response
-     setTimeout(() => {
-         chatbotMessages.innerHTML += `<div><strong>AI:</strong> I'm here to assist you!</div>`;
-     }, 1000);
- });
+        // Chatbot functionality
+        const chatbotIcon = document.getElementById('chatbot-icon');
+        const chatbot = document.getElementById('chatbot');
+        chatbotIcon.addEventListener('click', () => {
+            chatbot.style.display = chatbot.style.display === 'flex' ? 'none' : 'flex';
+        });
 
+        // AI Chatbot
+        const chatbotMessages = document.getElementById("chatbot-messages");
+        const chatbotQuery = document.getElementById("chatbot-query");
+        const chatbotSend = document.getElementById("chatbot-send");
+
+        chatbotSend.addEventListener("click", () => {
+            const userMessage = chatbotQuery.value;
+            if (!userMessage.trim()) return;
+            chatbotMessages.innerHTML += `<div><strong>You:</strong> ${userMessage}</div>`;
+            chatbotQuery.value = "";
+
+            // Mock AI response
+            setTimeout(() => {
+                chatbotMessages.innerHTML += `<div><strong>AI:</strong> I'm here to assist you!</div>`;
+            }, 1000);
+        });
     </script>
 </body>
+
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वित्तीय सशक्तिकरण प्लेटफार्म</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>वित्तीय सशक्तिकरण</h1>
+        <nav>
+            <a href="#about">के बारे में</a>
+            <a href="#tools">उपकरण</a>
+            <a href="#learning">शिक्षण</a>
+            <a href="#community">समुदाय</a>
+            <a href="#contact">संपर्क करें</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="full-page">
+            <h2>प्लेटफार्म के बारे में</h2>
+            <p>यह एआई-संचालित वित्तीय सशक्तिकरण प्लेटफार्म महिलाओं को आत्मविश्वासपूर्ण वित्तीय निर्णयों के लिए उपकरण और ज्ञान प्रदान करने के लिए डिज़ाइन किया गया है।</p>
+            <a href="tools_hi.html" class="button">हमारे उपकरण खोजें</a>
+        </section>
+
+        <section class="side-by-side" id="tools-and-learning">
+            <div>
+                <h2>उपकरण</h2>
+                <p>एआई-संचालित बजट उपकरण, सुरक्षित बैंकिंग विकल्प, और आपकी आवश्यकताओं के अनुसार माइक्रो-निवेश के अवसरों का उपयोग करें।</p>
+                <a href="tools_hi.html" class="button">उपकरण खोजें</a>
+            </div>
+            <div>
+                <h2>शिक्षण संसाधन</h2>
+                <p>विभिन्न साक्षरता स्तरों के लिए स्थानीय भाषाओं में व्यक्तिगत वित्तीय शिक्षा तक पहुंचें।</p>
+                <a href="learning_hi.html" class="button">शिक्षण प्रारंभ करें</a>
+            </div>
+        </section>
+
+        <section id="community">
+            <h2>समुदाय समर्थन</h2>
+            <p>मार्गदर्शन के लिए सलाहकारों, सलाहकारों और सफल महिला उद्यमियों के सहायक नेटवर्क में शामिल हों।</p>
+            <a href="community_hi.html" class="button">समुदाय में शामिल हों</a>
+        </section>
+
+        <section id="contact">
+            <h2>संपर्क करें</h2>
+            <p>कोई प्रश्न है? अधिक जानकारी या समर्थन के लिए हमसे संपर्क करें।</p>
+            <a href="contact_hi.html" class="button">संपर्क समर्थन</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 वित्तीय सशक्तिकरण प्लेटफार्म। सभी अधिकार सुरक्षित। | <a href="#">गोपनीयता नीति</a></p>
+    </footer>
+
+    <div id="chatbot-icon"></div>
+
+    <div id="chatbot">
+        <div id="chatbot-header">एआई सहायक</div>
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="chatbot-query" placeholder="मुझसे कुछ भी पूछें...">
+            <button id="chatbot-send">भेजें</button>
+        </div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+        <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="index.html">English</option>
+            <option value="index_hi.html" selected>हिंदी</option>
+        </select>
+    </div>
+
+    <script>
+        // Function to change language
+        function changeLanguage(language) {
+            location.href = language;
+        }
+
+        // Set the language switcher to the correct value
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -10,129 +10,151 @@
         /* Tools Section */
         /* Header */
         body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #d4bbfc;
-    color: #333;
-}
- /* Header */
-.light-header {
-    background: #9667e0;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4bbfc;
+            color: #333;
+        }
 
-.light-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Header */
+        .light-header {
+            background: #9667e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
 
-.light-header h1 {
-    font-size: 1.8em;
-    color: #f8fcff;
-}
+        .light-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.light-header nav a {
-    margin: 0 15px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
+        .light-header h1 {
+            font-size: 1.8em;
+            color: #f8fcff;
+        }
 
-.light-header nav a:hover, .light-header nav .active {
-    color: #d4bbfc;
-    font-weight: bold;
-}
+        .light-header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-/* Footer */
-.light-footer {
-    background: #9667e0;
-    border-top: 1px solid #e0e0e0;
-    padding: 20px 0;
-    text-align: center;
-    color: #fffcfc;
-    font-size: 14px;
-}
+        .light-header nav a:hover,
+        .light-header nav .active {
+            color: #d4bbfc;
+            font-weight: bold;
+        }
 
-.light-footer a {
-    color: #281645;
-    text-decoration: none;
-}
+        /* Footer */
+        .light-footer {
+            background: #9667e0;
+            border-top: 1px solid #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            color: #fffcfc;
+            font-size: 14px;
+        }
 
-.light-footer a:hover {
-    text-decoration: underline;
-}
+        .light-footer a {
+            color: #281645;
+            text-decoration: none;
+        }
 
-.tools-section {
-    background: #ebd9fc;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-}
+        .light-footer a:hover {
+            text-decoration: underline;
+        }
 
-.tools-section h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
+        .tools-section {
+            background: #ebd9fc;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
 
-.tool-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+        .tools-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-.tool-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    width: 300px;
-    text-align: left;
-}
+        .tools-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-.tool-card h3 {
-    color: #333;
-    margin-bottom: 15px;
-}
+        .tools-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            width: 300px;
+            text-align: left;
+        }
 
-.tool-card input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        .tools-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.tool-card button {
-    background: #9556fb;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
+        .tools-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
 
-.tool-card button:hover {
-    background: #601fc9;
-}
+        .tools-card a,
+        .tools-card button {
+            background: #9a5efb;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
 
-.tool-card p {
-    margin-top: 10px;
-    font-weight: bold;
-}
+        .tools-card a:hover,
+        .tools-card button:hover {
+            background: #5626a3;
+        }
 
+        #language-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #language-switcher img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #language-switcher select {
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -140,13 +162,13 @@
     <!-- Header -->
     <header class="light-header">
         <div class="container">
-            <h1>Financial Empowerment</h1>
+            <h1>Financial Tools</h1>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#about">About</a>
-                <a href="#tools" class="active">Tools</a>
-                <a href="#community">Community</a>
-                <a href="#contact">Contact</a>
+                <a href="tools.html" class="active">Tools</a>
+                <a href="learning.html">Learning</a>
+                <a href="community.html">Community</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -154,44 +176,23 @@
     <!-- Main Section -->
     <main>
         <section class="tools-section light-theme">
-            <h2>Financial Tools</h2>
-            <p>Use these tools to make confident financial decisions and achieve financial freedom.</p>
-
-            <div class="tool-cards">
-                <div class="tool-card">
-                    <h3>SIP Calculator</h3>
-                    <input type="number" id="sip-investment" placeholder="Monthly Investment (₹)">
-                    <input type="number" id="sip-rate" placeholder="Expected Annual Return (%)">
-                    <input type="number" id="sip-duration" placeholder="Duration (Years)">
-                    <button onclick="calculateSIP()">Calculate</button>
-                    <p id="sip-result"></p>
+            <h2>Our Tools</h2>
+            <p>Explore our AI-powered budgeting tools, secure banking options, and micro-investment opportunities tailored to your needs.</p>
+            <div class="tools-categories">
+                <div class="tools-card">
+                    <h3>Budgeting Tool</h3>
+                    <p>Manage your finances effectively with our AI-powered budgeting tool.</p>
+                    <a href="#" class="button">Use Budgeting Tool</a>
                 </div>
-
-                <div class="tool-card">
-                    <h3>Mutual Fund Return</h3>
-                    <input type="number" id="mf-investment" placeholder="Investment Amount (₹)">
-                    <input type="number" id="mf-rate" placeholder="Expected Return Rate (%)">
-                    <input type="number" id="mf-duration" placeholder="Duration (Years)">
-                    <button onclick="calculateMutualFund()">Calculate</button>
-                    <p id="mf-result"></p>
+                <div class="tools-card">
+                    <h3>Secure Banking</h3>
+                    <p>Access secure banking options tailored to your financial needs.</p>
+                    <a href="#" class="button">Explore Banking Options</a>
                 </div>
-
-                <div class="tool-card">
-                    <h3>FD Return Calculator</h3>
-                    <input type="number" id="fd-investment" placeholder="Principal Amount (₹)">
-                    <input type="number" id="fd-rate" placeholder="Interest Rate (%)">
-                    <input type="number" id="fd-duration" placeholder="Duration (Years)">
-                    <button onclick="calculateFD()">Calculate</button>
-                    <p id="fd-result"></p>
-                </div>
-
-                <div class="tool-card">
-                    <h3>Loan EMI Calculator</h3>
-                    <input type="number" id="loan-amount" placeholder="Loan Amount (₹)">
-                    <input type="number" id="loan-rate" placeholder="Interest Rate (%)">
-                    <input type="number" id="loan-tenure" placeholder="Tenure (Years)">
-                    <button onclick="calculateEMI()">Calculate</button>
-                    <p id="loan-emi-result"></p>
+                <div class="tools-card">
+                    <h3>Micro-Investments</h3>
+                    <p>Start investing with small amounts and grow your wealth over time.</p>
+                    <a href="#" class="button">Learn About Micro-Investments</a>
                 </div>
             </div>
         </section>
@@ -205,64 +206,30 @@
         </div>
     </footer>
 
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+        <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="tools.html">English</option>
+            <option value="tools_hi.html">हिंदी</option>
+        </select>
+    </div>
+
     <script>
-        // SIP Calculator
-function calculateSIP() {
-    const investment = parseFloat(document.getElementById("sip-investment").value);
-    const rate = parseFloat(document.getElementById("sip-rate").value) / 100 / 12;
-    const duration = parseInt(document.getElementById("sip-duration").value) * 12;
+        // Function to change language and store preference
+        function changeLanguage(language) {
+            location.href = language;
+        }
 
-    if (investment && rate && duration) {
-        const futureValue = investment * ((Math.pow(1 + rate, duration) - 1) / rate) * (1 + rate);
-        document.getElementById("sip-result").innerText = `Future Value: ₹${futureValue.toFixed(2)}`;
-    } else {
-        document.getElementById("sip-result").innerText = "Please fill all fields!";
-    }
-}
+        // Check stored language preference on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
 
-// Mutual Fund Return Calculator
-function calculateMutualFund() {
-    const investment = parseFloat(document.getElementById("mf-investment").value);
-    const rate = parseFloat(document.getElementById("mf-rate").value) / 100;
-    const duration = parseInt(document.getElementById("mf-duration").value);
-
-    if (investment && rate && duration) {
-        const futureValue = investment * Math.pow(1 + rate, duration);
-        document.getElementById("mf-result").innerText = `Future Value: ₹${futureValue.toFixed(2)}`;
-    } else {
-        document.getElementById("mf-result").innerText = "Please fill all fields!";
-    }
-}
-
-// FD Return Calculator
-function calculateFD() {
-    const principal = parseFloat(document.getElementById("fd-investment").value);
-    const rate = parseFloat(document.getElementById("fd-rate").value) / 100;
-    const duration = parseInt(document.getElementById("fd-duration").value);
-
-    if (principal && rate && duration) {
-        const futureValue = principal * Math.pow(1 + rate, duration);
-        document.getElementById("fd-result").innerText = `Maturity Amount: ₹${futureValue.toFixed(2)}`;
-    } else {
-        document.getElementById("fd-result").innerText = "Please fill all fields!";
-    }
-}
-
-// Loan EMI Calculator
-function calculateEMI() {
-    const amount = parseFloat(document.getElementById("loan-amount").value);
-    const rate = parseFloat(document.getElementById("loan-rate").value) / 100 / 12;
-    const tenure = parseInt(document.getElementById("loan-tenure").value) * 12;
-
-    if (amount && rate && tenure) {
-        const emi = (amount * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
-        document.getElementById("loan-emi-result").innerText = `EMI: ₹${emi.toFixed(2)}`;
-    } else {
-        document.getElementById("loan-emi-result").innerText = "Please fill all fields!";
-    }
-}
-
+        // Set the language switcher to the correct value
+        document.getElementById('language-select').value = location.pathname.split('/').pop();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

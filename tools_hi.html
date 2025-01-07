@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>वित्तीय उपकरण</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tools Section */
+        /* Header */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4bbfc;
+            color: #333;
+        }
+
+        /* Header */
+        .light-header {
+            background: #9667e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .light-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .light-header h1 {
+            font-size: 1.8em;
+            color: #f8fcff;
+        }
+
+        .light-header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .light-header nav a:hover,
+        .light-header nav .active {
+            color: #d4bbfc;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .light-footer {
+            background: #9667e0;
+            border-top: 1px solid #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            color: #fffcfc;
+            font-size: 14px;
+        }
+
+        .light-footer a {
+            color: #281645;
+            text-decoration: none;
+        }
+
+        .light-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .tools-section {
+            background: #ebd9fc;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .tools-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .tools-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .tools-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            width: 300px;
+            text-align: left;
+        }
+
+        .tools-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .tools-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .tools-card a,
+        .tools-card button {
+            background: #9a5efb;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .tools-card a:hover,
+        .tools-card button:hover {
+            background: #5626a3;
+        }
+
+        #language-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #language-switcher img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #language-switcher select {
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="light-header">
+        <div class="container">
+            <h1>वित्तीय उपकरण</h1>
+            <nav>
+                <a href="index.html">होम</a>
+                <a href="tools.html" class="active">उपकरण</a>
+                <a href="learning.html">शिक्षण</a>
+                <a href="community.html">समुदाय</a>
+                <a href="contact.html">संपर्क करें</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="tools-section light-theme">
+            <h2>हमारे उपकरण</h2>
+            <p>हमारे एआई-संचालित बजट उपकरण, सुरक्षित बैंकिंग विकल्प, और आपकी आवश्यकताओं के अनुसार माइक्रो-निवेश के अवसरों का अन्वेषण करें।</p>
+            <div class="tools-categories">
+                <div class="tools-card">
+                    <h3>बजट उपकरण</h3>
+                    <p>हमारे एआई-संचालित बजट उपकरण के साथ अपने वित्त का प्रभावी ढंग से प्रबंधन करें।</p>
+                    <a href="#" class="button">बजट उपकरण का उपयोग करें</a>
+                </div>
+                <div class="tools-card">
+                    <h3>सुरक्षित बैंकिंग</h3>
+                    <p>अपने वित्तीय आवश्यकताओं के अनुसार सुरक्षित बैंकिंग विकल्पों तक पहुंचें।</p>
+                    <a href="#" class="button">बैंकिंग विकल्पों का अन्वेषण करें</a>
+                </div>
+                <div class="tools-card">
+                    <h3>माइक्रो-निवेश</h3>
+                    <p>छोटी राशि से निवेश शुरू करें और समय के साथ अपनी संपत्ति बढ़ाएं।</p>
+                    <a href="#" class="button">माइक्रो-निवेश के बारे में जानें</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="light-footer">
+        <div class="container">
+            <p>&copy; 2025 वित्तीय सशक्तिकरण प्लेटफार्म। सभी अधिकार सुरक्षित।</p>
+            <p><a href="#">गोपनीयता नीति</a></p>
+        </div>
+    </footer>
+
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+        <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="tools.html">English</option>
+            <option value="tools_hi.html" selected>हिंदी</option>
+        </select>
+    </div>
+
+    <script>
+        // Function to change language and store preference
+        function changeLanguage(language) {
+            location.href = language;
+        }
+
+        // Check stored language preference on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
+
+        // Set the language switcher to the correct value
+        document.getElementById('language-select').value = location.pathname.split('/').pop();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
