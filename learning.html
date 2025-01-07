@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Learning Resources Section */
+        /* Header */
+       body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #d4bbfc;
+    color: #333;
+}
+ /* Header */
+.light-header {
+    background: #9667e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.light-header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light-header h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+}
+
+.light-header nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.light-header nav a:hover, .light-header nav .active {
+    color: #d4bbfc;
+    font-weight: bold;
+}
+
+/* Footer */
+.light-footer {
+    background: #9667e0;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+    text-align: center;
+    color: #fffcfc;
+    font-size: 14px;
+}
+
+.light-footer a {
+    color: #281645;
+    text-decoration: none;
+}
+
+.light-footer a:hover {
+    text-decoration: underline;
+}
+.learning-section {
+    background: #ebd9fc;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.learning-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.learning-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.learning-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 300px;
+    text-align: left;
+}
+
+.learning-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.learning-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.learning-card a,
+.learning-card button {
+    background: #9a5efb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.learning-card a:hover,
+.learning-card button:hover {
+    background: #5626a3;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="light-header">
+        <div class="container">
+            <h1>Financial Empowerment</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="tools.html">Tools</a>
+                <a href="#community">Community</a>
+                <a href="learning.html" class="active">Learning</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="learning-section light-theme">
+            <h2>Learning Resources</h2>
+            <p>Enhance your financial knowledge with curated resources designed for all learning levels.</p>
+
+            <div class="learning-categories">
+                <div class="learning-card">
+                    <h3>Curated Articles</h3>
+                    <p>Read insightful articles on saving, investing, and managing your finances effectively.</p>
+                    <a href="https://www.investopedia.com/" target="_blank" class="button">Read Articles</a>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Video Tutorials</h3>
+                    <p>Watch tutorials on budgeting, investing, and financial planning.</p>
+                    <a href="https://www.youtube.com/results?search_query=financial+planning" target="_blank" class="button">Watch Videos</a>
+                </div>
+
+                <div class="learning-card">
+                    <h3>eBooks</h3>
+                    <p>Download free eBooks to explore financial strategies and personal finance concepts.</p>
+                    <a href="#" class="button">Download eBooks</a>
+                </div>
+
+                <div class="learning-card">
+                    <h3>Interactive Quizzes</h3>
+                    <p>Test your knowledge with fun and engaging quizzes on financial topics.</p>
+                    <button onclick="startQuiz()">Take a Quiz</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="light-footer">
+        <div class="container">
+            <p>&copy; 2025 Financial Empowerment Platform. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Start Quiz
+function startQuiz() {
+    alert("Interactive quizzes are coming soon!");
+}
+
+    </script>
+</body>
+
+</html>
