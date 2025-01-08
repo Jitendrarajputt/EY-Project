@@ -9,124 +9,152 @@
     <style>
         /* Learning Resources Section */
         /* Header */
-       body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #d4bbfc;
-    color: #333;
-}
- /* Header */
-.light-header {
-    background: #9667e0;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4bbfc;
+            color: #333;
+        }
 
-.light-header .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        /* Header */
+        .light-header {
+            background: #9667e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
 
-.light-header h1 {
-    font-size: 1.8em;
-    color: #ffffff;
-}
+        .light-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.light-header nav a {
-    margin: 0 15px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
+        .light-header h1 {
+            font-size: 1.8em;
+            color: #ffffff;
+        }
 
-.light-header nav a:hover, .light-header nav .active {
-    color: #d4bbfc;
-    font-weight: bold;
-}
+        .light-header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
 
-/* Footer */
-.light-footer {
-    background: #9667e0;
-    border-top: 1px solid #e0e0e0;
-    padding: 20px 0;
-    text-align: center;
-    color: #fffcfc;
-    font-size: 14px;
-}
+        .light-header nav a:hover,
+        .light-header nav .active {
+            color: #d4bbfc;
+            font-weight: bold;
+        }
 
-.light-footer a {
-    color: #281645;
-    text-decoration: none;
-}
+        /* Footer */
+        .light-footer {
+            background: #9667e0;
+            border-top: 1px solid #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            color: #fffcfc;
+            font-size: 14px;
+        }
 
-.light-footer a:hover {
-    text-decoration: underline;
-}
-.learning-section {
-    background: #ebd9fc;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 20px auto;
-    text-align: center;
-}
+        .light-footer a {
+            color: #281645;
+            text-decoration: none;
+        }
 
-.learning-section h2 {
-    color: #333;
-    margin-bottom: 20px;
-}
+        .light-footer a:hover {
+            text-decoration: underline;
+        }
 
-.learning-categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+        .learning-section {
+            background: #ebd9fc;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
 
-.learning-card {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    width: 300px;
-    text-align: left;
-}
+        .learning-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
 
-.learning-card h3 {
-    color: #333;
-    margin-bottom: 15px;
-}
+        .learning-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
 
-.learning-card p {
-    font-size: 14px;
-    margin-bottom: 15px;
-}
+        .learning-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            width: 300px;
+            text-align: left;
+        }
 
-.learning-card a,
-.learning-card button {
-    background: #9a5efb;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background 0.3s;
-}
+        .learning-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.learning-card a:hover,
-.learning-card button:hover {
-    background: #5626a3;
-}
+        .learning-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
 
+        .learning-card a,
+        .learning-card button {
+            background: #9a5efb;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .learning-card a:hover,
+        .learning-card button:hover {
+            background: #5626a3;
+        }
+
+        #language-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #language-switcher img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #language-switcher select {
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding: 5px;
+        }
     </style>
 </head>
 
@@ -149,12 +177,12 @@
     <main>
         <section class="learning-section light-theme">
             <h2>Learning Resources</h2>
-            <p>Enhance your financial knowledge with curated resources designed for all learning levels.</p>
+            <p>Enhance your financial knowledge with resources designed for all learning levels.</p>
 
             <div class="learning-categories">
                 <div class="learning-card">
                     <h3>Curated Articles</h3>
-                    <p>Read insightful articles on saving, investing, and managing your finances effectively.</p>
+                    <p>Read informative articles on saving, investing, and managing your finances effectively.</p>
                     <a href="https://www.investopedia.com/" target="_blank" class="button">Read Articles</a>
                 </div>
 
@@ -187,12 +215,33 @@
         </div>
     </footer>
 
-    <script>
-        // Start Quiz
-function startQuiz() {
-    alert("Interactive quizzes are coming soon!");
-}
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+        <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="learning.html">English</option>
+            <option value="learning_hi.html">हिंदी</option>
+        </select>
+    </div>
 
+    <script>
+        // Function to change language and store preference
+        function changeLanguage(language) {
+            location.href = language;
+        }
+
+        // Check stored language preference on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
+
+        // Set the language switcher to the correct value
+        document.getElementById('language-select').value = location.pathname.split('/').pop();
+
+        // Start Quiz
+        function startQuiz() {
+            alert("Interactive quizzes are coming soon!");
+        }
     </script>
 </body>
 

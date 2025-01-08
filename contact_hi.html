@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>संपर्क करें</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #d4bbfc;
+            color: #333;
+        }
+
+        /* Header */
+        .light-header {
+            background: #9667e0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .light-header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .light-header h1 {
+            font-size: 1.8em;
+            color: #ffffff;
+        }
+
+        .light-header nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .light-header nav a:hover,
+        .light-header nav .active {
+            color: #bda5e3;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .light-footer {
+            background: #9667e0;
+            border-top: 1px solid #e0e0e0;
+            padding: 20px 0;
+            text-align: center;
+            color: #fffcfc;
+            font-size: 14px;
+        }
+
+        .light-footer a {
+            color: #401e77;
+            text-decoration: none;
+        }
+
+        .light-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #ebd9fc;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .contact-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #f2ebfb;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #f2ebfb;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-form button {
+            background: #9667e0;
+            color: #f2ebfb;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #5b349b;
+        }
+
+        #language-switcher {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        #language-switcher img {
+            width: 20px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        #language-switcher select {
+            border: none;
+            font-size: 14px;
+            outline: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="light-header">
+        <div class="container">
+            <h1>संपर्क करें</h1>
+            <nav>
+                <a href="index.html">होम</a>
+                <a href="tools.html">उपकरण</a>
+                <a href="learning.html">शिक्षण</a>
+                <a href="community.html">समुदाय</a>
+                <a href="contact.html" class="active">संपर्क करें</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>संपर्क करें</h2>
+            <p>यदि आपके कोई प्रश्न हैं, तो कृपया हमसे संपर्क करें।</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">नाम:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">ईमेल:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">संदेश:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">भेजें</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="light-footer">
+        <div class="container">
+            <p>&copy; 2025 वित्तीय सशक्तिकरण प्लेटफार्म। सभी अधिकार सुरक्षित। | <a href="#">गोपनीयता नीति</a></p>
+        </div>
+    </footer>
+
+    <!-- Language Switcher -->
+    <div id="language-switcher">
+        <img src="Screenshot 2025-01-06 235552.png" alt="Flag"> <!-- Add actual flag image paths -->
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="contact.html">English</option>
+            <option value="contact_hi.html" selected>हिंदी</option>
+        </select>
+    </div>
+
+    <script>
+        // Function to change language and store preference
+        function changeLanguage(language) {
+            location.href = language;
+        }
+
+        // Check stored language preference on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('language-select').value = location.pathname.split('/').pop();
+        });
+
+        // Set the language switcher to the correct value
+        document.getElementById('language-select').value = location.pathname.split('/').pop();
+
+        // Form submission
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (name && email && message) {
+                alert(`धन्यवाद, ${name}! आपका संदेश भेज दिया गया है।`);
+                this.reset();
+            } else {
+                alert("कृपया सभी फ़ील्ड भरें।");
+            }
+        });
+    </script>
+</body>
+
+</html>
